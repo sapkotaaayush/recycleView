@@ -22,38 +22,36 @@ public class MainActivity extends AppCompatActivity {
 
         rvTeachers.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
-        prepareData(); // add 5 teachers
+        prepareData();
 
         TeacherAdapter adapter = new TeacherAdapter(MainActivity.this, teacherData);
         rvTeachers.setAdapter(adapter);
     }
 
     private void prepareData() {
-        // 5 teachers like in the diagram (x5)
-
         teacherData.add(new TeacherModel(
-                "Mr. Sharma",
-                "Math, Physics"
+                "Mr. Shishir",
+                "DS"
         ));
 
         teacherData.add(new TeacherModel(
-                "Ms. Karki",
-                "English, Social Studies"
+                "Mr. Abhisekh",
+                "MP"
         ));
 
         teacherData.add(new TeacherModel(
-                "Mr. Singh",
-                "Science, Computer"
+                "Mr. Sanjiv",
+                "Eco"
         ));
 
         teacherData.add(new TeacherModel(
-                "Ms. Rai",
-                "Accountancy, Economics"
+                "Mr Bhola",
+                "NP"
         ));
 
         teacherData.add(new TeacherModel(
-                "Mr. Thapa",
-                "Nepali, Health"
+                "Mr. Naveen",
+                "AdvJava"
         ));
     }
 }
